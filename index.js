@@ -19,6 +19,9 @@ let courses = [
     }
 ];4
 
+app.get('/', (req, res)=> {
+    res.send(JSON.stringify(courses));   
+})
 app.get('/courses', (req, res) => {
     res.send(JSON.stringify(courses));
 });
